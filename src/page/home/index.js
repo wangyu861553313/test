@@ -12,9 +12,9 @@ class Home extends Component {
   }
 
   componentDidMount(){
-    getToken().then((res)=>{
-      console.log(res);
-    })
+    // getToken().then((res)=>{
+    //   console.log(res);
+    // })
   }
 
   render() {
