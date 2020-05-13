@@ -4,7 +4,7 @@ import Home from '../page/home/index.js'
 const Root = ()=>(
     <div>
         <Switch>
-            <Route path='/home' component={Home}></Route>
+            <Route path='/' component={Home}></Route>
         </Switch>
     </div>
 )
