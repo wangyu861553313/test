@@ -1,13 +1,17 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route,Router, Switch, Redirect } from 'react-router-dom';
+
 import Home from '../page/home/index.js'
-import Login from '../page/home/index.js'
+import Login from '../page/login/index.js'
+const createBrowserHistory = require("history").createBrowserHistory
+const history = createBrowserHistory();
+
 const Root = ()=>(
-    <div>
+    <Router history={history}>
         <Switch>
-            <Route path='/' component={Home}></Route>
-            <Route path='/login' component={Login}></Route>
+            <Route path='/' exact component={Home} />
+            <Route path='/login' exact component={Login} />
         </Switch>
-    </div>
+    </Router >
 )
 export default Root

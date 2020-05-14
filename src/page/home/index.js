@@ -17,9 +17,17 @@ class Home extends Component {
     // })
   }
 
+  toLogin(){
+    this.props.history.push({ pathname: '/login' });
+  }
+
   render() {
     return (
-      <div>这是home</div>
+      <div>这是home
+
+        <div onClick={()=>{this.toLogin()}}>点击跳转</div>
+      </div>
+      
     );
   }
 }
