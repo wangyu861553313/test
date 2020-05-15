@@ -23,7 +23,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>这是homess
+      <div>这是home
 
         <div onClick={()=>{this.toLogin()}}>点击跳转</div>
       </div>
